@@ -20,19 +20,21 @@ export default function Home() {
           <a href="" className={styles.card}>
           <Image 
             src="/../public/img/tenisky/teniska1.png" 
-            alt="Teniska Air Force 1 Gym Red"
-            width={2160}
-            height={1346}/>
-            <h2>Air Force 1 Gym Red</h2>
+            alt="Teniska Jordan 1 Mid GS Fire Red"
+            width={1080}
+            height={673}/>
+            <h2>Jordan 1 Mid GS Fire Red</h2>
+            <p>5.499 Kč</p>
           </a>
 
           <a href="" className={styles.card}>
             <Image 
               src="/../public/img/tenisky/teniska2.png" 
               alt="Teniska Jordan 1 Mid Stealth"
-              width={2160}
-              height={1346}/>
+              width={1080}
+              height={673}/>
             <h2>Jordan 1 Mid Stealth</h2>
+            <p>4.999 Kč</p>
           </a>
         </div>
       </main>
