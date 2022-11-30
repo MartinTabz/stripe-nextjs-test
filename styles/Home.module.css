@@ -89,6 +89,23 @@
   height: auto;
   padding: 40px;
 }
+.card button {
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 35px;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0;
+  background-color: #11d67e;
+  transition: .35s ease-in-out;
+}
+.card button:hover {
+  background-color: #fafafa;
+  color: #222;
+}
 
 .card:hover,
 .card:focus,
