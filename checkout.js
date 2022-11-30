@@ -13,19 +13,6 @@ export async function checkout({lineItems}){
    const stripe = await getStripe()
 
    await stripe.redirectToCheckout({
-      shipping_address_collection: {allowed_countries: ['CZ', 'SK']},
-      shipping_options: [
-         {
-           shipping_rate_data: {
-             fixed_amount: {amount: 0, currency: 'czk'},
-             display_name: 'Doprava zdarma',
-             delivery_estimate: {
-               minimum: {unit: 'business_day', value: 3},
-               maximum: {unit: 'business_day', value: 5},
-             },
-           },
-         },
-       ],
       mode: 'payment',
       lineItems,
       successUrl: `${window.location.origin}/objednavka-prijata`,
