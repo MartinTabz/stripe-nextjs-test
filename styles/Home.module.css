@@ -74,7 +74,8 @@
 }
 
 .card {
-  margin: 5rem 1rem;
+  margin: 0.5rem;
+  margin-top: 50px;
   padding: 1.5rem;
   text-align: center;
   color: inherit;
@@ -84,16 +85,16 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 .card img {
-  width: 300px;
+  width: 280px;
   height: auto;
-  padding: 50px;
+  padding: 40px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #8b5a2f;
-  border-color: #8b5a2f;
+  color: #11d67e;
+  border-color: #11d67e;
 }
 
 .card h2 {

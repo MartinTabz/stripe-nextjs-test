@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="" className={styles.card}>
           <Image 
-            src="/../public/img/tenisky/teniska1.png" 
+            src="/img/tenisky/teniska1.png" 
             alt="Teniska Jordan 1 Mid GS Fire Red"
             width={1080}
             height={673}/>
@@ -29,7 +29,7 @@ export default function Home() {
 
           <a href="" className={styles.card}>
             <Image 
-              src="/../public/img/tenisky/teniska2.png" 
+              src="/img/tenisky/teniska2.png" 
               alt="Teniska Jordan 1 Mid Stealth"
               width={1080}
               height={673}/>
