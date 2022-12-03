@@ -99,9 +99,13 @@ export default function Home() {
       mode: 'no-cors',  
       method: 'POST',
       headers: {
-        'key': process.env.ECOMAIL_API_KEY,
-        'Content-Type': 'application/json',
-        'Host': 'https://www.insole.cz'
+			'key': process.env.ECOMAIL_API_KEY,
+			'Content-Type': 'application/json',
+			'Host': 'https://www.insole.cz/',
+			'Cache-Control': 'no-cache',
+			'Accept': '*/*',
+			'Accept-Encoding': 'gzip, deflate, br',
+			'Connection': 'keep-alive',
       },
       body: JSONbody,
     })
