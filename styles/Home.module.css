@@ -61,8 +61,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .grid {
@@ -71,6 +70,9 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .card {
@@ -148,4 +150,143 @@
   .logo img {
     filter: invert(1);
   }
+}
+.newsletter_area {
+  max-width: 500px;
+  width: 90%;
+  margin-top: 70px;
+  background-color: #222;
+  padding: 50px;
+  border: 0;
+  border-radius: 25px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.newsletter_area h2 {
+  color: #11d67e;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.newsletter_area form {
+  display: inline;
+}
+.input_field {
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+.input_field label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 6px 0;
+}
+.input_field label::after {
+  content: ' *';
+  color: red;
+}
+.input_field input {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  color: #eaeaea;
+}
+.submit {
+  width: 96%;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 11px;
+  padding: 20px 0;
+  background-color: #11d67e;
+  border: 0;
+  border-radius: 25px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .35s ease;
+}
+.submit:hover {
+  background-color: #111;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .newsletter_area {
+    max-width: 400px;
+    width: 95%;
+    margin-top: 50px;
+    background-color: #222;
+    padding: 20px;
+    border: 0;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .newsletter_area h2 {
+    color: #11d67e;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .newsletter_area form {
+    display: inline;
+  }
+  .input_field {
+    display: block;
+    padding: 5px;
+    position: relative;
+  }
+  .input_field label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 0;
+  }
+  .input_field label::after {
+    content: ' *';
+    color: red;
+  }
+  .input_field input {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    color: #eaeaea;
+  }
+  .submit {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #11d67e;
+    border: 0;
+    margin-left: -0px;
+    border-radius: 25px;
+    font-size: 25px;
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .35s ease;
+  }
+  .submit:hover {
+    background-color: #111;
+    color: white;
+  }
+}
+.logo_area img{
+  height: 50px;
+  width: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 20px 0;
 }

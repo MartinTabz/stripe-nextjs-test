@@ -1,0 +1,26 @@
+.podekovani {
+   position: absolute;
+   top: 42%;
+   left: 50%;
+   transform: translate(-50%);
+   font-size: 60px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+}
+.odkazdomu {
+   text-decoration: underline;
+   font-size: 25px;
+   color: #11d67e;
+   text-align: center;
+   width: 100%;
+   padding: 50px;
+}
+.podekovani_area {
+   width: 100%;
+   text-align: center;
+   padding: 30px;
+   font-weight: 600;
+   font-family: 'Courier New', Courier, monospace;
+}
