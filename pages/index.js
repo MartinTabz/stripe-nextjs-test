@@ -95,13 +95,13 @@ export default function Home() {
     }
     const JSONbody = JSON.stringify(body)
 
-    const response = await fetch('https://api2.ecomailapp.com/lists/1/subscribe', {
+    const response = await fetch('http://api2.ecomailapp.com/lists/1/subscribe', {
       mode: 'no-cors',  
       method: 'POST',
       headers: {
         'key': process.env.ECOMAIL_API_KEY,
         'Content-Type': 'application/json',
-        'Host': 'www.insole.cz'
+        'Host': 'https://www.insole.cz'
       },
       body: JSONbody,
     })
